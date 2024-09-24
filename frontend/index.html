@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>NCV</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+        <header class="header">
+            <img src="images/logo.png" alt="imagem logo">
+        </header>
+
+        <main class="principal">
+            <div class="confs">
+                <form action="#" method="post" class="form_arquivo">
+                <fieldset class="sel_caminho">
+                    <input type="file" name="path">
+                </fieldset>
+
+                <fieldset class="container_dimensoes">
+                    <p>Digite o nome das dimensões do arquivo.</p>
+
+                    <label for="name_lat">Latitude:</label>
+                    <input type="text" name="name_lat" id="name_lat">
+                    
+                    <label for="name_lon">Longitude:</label>
+                    <input type="text" name="name_lon" id="name_lon">
+                    
+                    <label for="name_time">Time:</label>
+                    <input type="text" name="name_time" id="name_time">
+                    
+                    <label for="name_depth">Depth:</label>
+                    <input type="text" name="name_depth" id="name_depth">
+                </fieldset>
+
+                
+                </form>
+
+                <form action="#" method="post" class="form_plot">
+                    <fieldset class="container_time">
+                        <legend>Time</legend>
+                        <p>Selecione a data e hora para ser visualizada</p>
+    
+                        <label for="sel_data">Data:</label>
+                        <input type="date" name="sel_data" id="sel_data">
+    
+                        <label for="sel_hora">Hora:</label>
+                        <input type="time" name="sel_hora" id="sel_hora">
+                    </fieldset>
+    
+                    <fieldset class="container_depth">
+                        <legend>Depth</legend>
+                        <p>Selecione uma profundidade para ser visualizada</p>
+    
+                        <label for="sel_depth">Profundidade: </label>
+                        <input type="number" name="sel_depth" id="sel_depth">
+                    </fieldset>
+    
+                    <fieldset class="container_save">
+                        <legend>Save</legend>
+    
+                        <label for="sel_save">Deseja salvar?</label>
+                        <input type="checkbox" name="sel_save" id="sel_save">
+                    </fieldset>
+                </form>
+            
+            </div>
+            <div class="container_visualizacao">
+                
+            </div>
+        </main>
+</body>
+</html>
