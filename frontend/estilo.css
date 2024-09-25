@@ -43,10 +43,40 @@ fieldset {
 }
 
 .form_arquivo {
+    padding: 5px;
     border: 1px solid #666;
-    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-.form_arquivo fieldset{
-    border: none;
+.form_arquivo button{
+    background-color: rgb(107, 135, 212);
 }
+
+.form_arquivo button:hover {
+    background-color: rgb(72, 91, 143);
+}
+
+.form_arquivo input {
+    flex-grow: 1;
+}
+
+button {
+    display: inline-block;
+    width: auto;
+    padding: 0.25rem 0.4rem;
+}
+
+input[type="file"] {
+    display: none;
+}
+  
+#button_path {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 0.25rem 0.4rem;
+    cursor: pointer;
+}
+
+
+

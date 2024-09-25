@@ -15,27 +15,29 @@
         <main class="principal">
             <div class="confs">
                 <form action="#" method="post" class="form_arquivo">
-                <fieldset class="sel_caminho">
-                    <input type="file" name="path">
-                </fieldset>
-
-                <fieldset class="container_dimensoes">
-                    <p>Digite o nome das dimensões do arquivo.</p>
-
-                    <label for="name_lat">Latitude:</label>
-                    <input type="text" name="name_lat" id="name_lat">
-                    
-                    <label for="name_lon">Longitude:</label>
-                    <input type="text" name="name_lon" id="name_lon">
-                    
-                    <label for="name_time">Time:</label>
-                    <input type="text" name="name_time" id="name_time">
-                    
-                    <label for="name_depth">Depth:</label>
-                    <input type="text" name="name_depth" id="name_depth">
-                </fieldset>
-
                 
+                    <input type="file" name="path" id="button_path">
+                    <button type="submit">Upload</button>
+                </form>
+
+                <form action="#" method="post" class="form_variaveis">
+                    <fieldset class="container_dimensoes">
+                        <p>Digite o nome das dimensões do arquivo.</p>
+
+                        <label for="name_lat">Latitude:</label>
+                        <input type="text" name="name_lat" id="name_lat">
+                        
+                        <label for="name_lon">Longitude:</label>
+                        <input type="text" name="name_lon" id="name_lon">
+                        
+                        <label for="name_time">Time:</label>
+                        <input type="text" name="name_time" id="name_time">
+                        
+                        <label for="name_depth">Depth:</label>
+                        <input type="text" name="name_depth" id="name_depth">
+
+                        <button type="submit">Carregar</button>
+                    </fieldset>
                 </form>
 
                 <form action="#" method="post" class="form_plot">
@@ -63,6 +65,10 @@
     
                         <label for="sel_save">Deseja salvar?</label>
                         <input type="checkbox" name="sel_save" id="sel_save">
+                    </fieldset>
+
+                    <fieldset class="fildset_plot">
+                        <button type="submit">Plotar</button>
                     </fieldset>
                 </form>
             
