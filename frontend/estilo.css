@@ -45,7 +45,6 @@ fieldset {
 .form_arquivo {
     padding: 5px;
     border: 1px solid #666;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -62,7 +61,8 @@ fieldset {
 }
 
 button {
-    display: inline-block;
+    align-self: center;
+    display: inline;
     width: auto;
     padding: 0.25rem 0.4rem;
 }
@@ -73,6 +73,7 @@ input[type="file"] {
   
 #button_path {
     border: 1px solid #ccc;
+    width: 100%;
     display: inline-block;
     padding: 0.25rem 0.4rem;
     cursor: pointer;
